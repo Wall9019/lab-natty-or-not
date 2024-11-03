@@ -15,5 +15,5 @@ Iniciei o projeto definindo os tipos de conteúdos que queria criar. Utilizei o 
 - Geração de 5 histórias originais acompanhadas de ilustrações geradas pela IA.
 - Um site interativo onde os usuários podem clicar para gerar novas histórias e imagens aleatórias.
 
-## 💭 Reflexão (Opcional)
+## 💭 Reflexão
 Foi um desafio empolgante tentar criar algo que parecesse "natty" (natural) utilizando tecnologias que, embora poderosas, ainda têm suas limitações. Aprendi muito sobre a importância da curadoria e da interação humana na criação de conteúdos que realmente ressoam.
