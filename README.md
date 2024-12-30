@@ -11,7 +11,7 @@ Neste projeto, explorei o potencial das IAs generativas para criar conteúdos vi
 ## 🧐 Processo de Criação
 Iniciei o projeto definindo os tipos de conteúdos que queria criar. Utilizei o GPT-3 para gerar histórias curtas e, em seguida, usei o DALL-E para criar imagens que complementavam essas histórias. Todo o processo foi documentado e ajustado com feedback para melhorar a qualidade dos outputs.
 
-## 🚀 Resultados
+## 🚀 Resultados : https://wall9019.github.io/lab-natty-or-not/
 - Geração de 5 histórias originais acompanhadas de ilustrações geradas pela IA.
 - Um site interativo onde os usuários podem clicar para gerar novas histórias e imagens aleatórias.
 
