@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórias Lúdicas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/angular@1.8.2/angular.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        .story-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .story-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .story-card img {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body ng-app="storyApp" ng-controller="StoryController">
+
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Histórias Lúdicas</h1>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col" ng-repeat="story in stories">
+                <div class="card story-card">
+                    <img ng-src="{{story.image}}" class="card-img-top" alt="Imagem da história">
+                    <div class="card-body">
+                        <h5 class="card-title">{{story.title}}</h5>
+                        <p class="card-text">{{story.content}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        angular.module('storyApp', []).controller('StoryController', function($scope) {
+            $scope.stories = [
+                {
+                    title: 'O Pássaro de Fogo',
+                    content: 'Em um reino distante, um pássaro dourado trazia esperança àqueles que o viam. Sua chama nunca queimava, mas aquecia os corações.',
+                    image: 'https://via.placeholder.com/300x200?text=P%C3%A1ssaro+de+Fogo'
+                },
+                {
+                    title: 'A Floresta Encantada',
+                    content: 'Dentro de uma floresta mágica, cada árvore contava uma história de coragem e amizade.',
+                    image: 'https://via.placeholder.com/300x200?text=Floresta+Encantada'
+                },
+                {
+                    title: 'O Castelo no Céu',
+                    content: 'Nas nuvens, havia um castelo onde sonhos se tornavam realidade com um simples desejo.',
+                    image: 'https://via.placeholder.com/300x200?text=Castelo+no+C%C3%A9u'
+                },
+                {
+                    title: 'O Pequeno Dragão',
+                    content: 'Um dragão que não sabia voar provou que coragem não depende de asas.',
+                    image: 'https://via.placeholder.com/300x200?text=Pequeno+Drag%C3%A3o'
+                },
+                {
+                    title: 'A Estrela Cadente',
+                    content: 'Uma estrela cadente guiou uma criança a encontrar um tesouro escondido dentro de si mesma.',
+                    image: 'https://via.placeholder.com/300x200?text=Estrela+Cadente'
+                }
+            ];
+        });
+    </script>
+
+</body>
+</html>
