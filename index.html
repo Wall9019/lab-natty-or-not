@@ -21,6 +21,16 @@
         .story-card img {
             border-radius: 10px;
         }
+        .story-card .card-text {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            height: 3em;
+        }
+        .story-card:hover .card-text {
+            white-space: normal;
+            height: auto;
+        }
     </style>
 </head>
 <body ng-app="storyApp" ng-controller="StoryController">
@@ -46,28 +56,38 @@
             $scope.stories = [
                 {
                     title: 'O Pássaro de Fogo',
-                    content: 'Em um reino distante, um pássaro dourado trazia esperança àqueles que o viam. Sua chama nunca queimava, mas aquecia os corações.',
-                    image: 'https://via.placeholder.com/300x200?text=P%C3%A1ssaro+de+Fogo'
+                    content: 'Em um reino distante, um pássaro dourado trazia esperança àqueles que o viam. Ele não apenas iluminava a escuridão, mas também aquecia os corações mais frios. Quando o reino foi ameaçado por uma sombra misteriosa, o Pássaro de Fogo guiou os bravos guerreiros à vitória com sua luz mágica.
+
+Uma vez, uma jovem chamada Lila avistou o Pássaro de Fogo ao caminhar pela floresta. Ele a levou a um vale escondido, onde encontrou um cristal mágico que poderia afastar toda escuridão do reino. Com coragem, Lila enfrentou criaturas das sombras e colocou o cristal no topo da montanha mais alta. O reino foi salvo, e Lila se tornou uma lenda.',
+                    image: '/mnt/data/A_magical_golden_bird_flying_over_a_kingdom,_radia.png'
                 },
                 {
                     title: 'A Floresta Encantada',
-                    content: 'Dentro de uma floresta mágica, cada árvore contava uma história de coragem e amizade.',
-                    image: 'https://via.placeholder.com/300x200?text=Floresta+Encantada'
+                    content: 'Dentro de uma floresta mágica, cada árvore tinha vida própria e contava histórias de eras passadas. Crianças aventureiras descobriam segredos sobre coragem e amizade enquanto exploravam trilhas misteriosas.
+
+Uma dessas crianças, João, encontrou uma árvore com folhas brilhantes. Ao tocar as folhas, foi transportado para uma dimensão onde animais falavam e estrelas iluminavam o chão. Ele precisou resolver enigmas para voltar, aprendendo que a verdadeira magia estava na amizade com seus novos companheiros animais.',
+                    image: '/mnt/data/An_enchanted_forest_with_glowing_trees,_mystical_c.png'
                 },
                 {
                     title: 'O Castelo no Céu',
-                    content: 'Nas nuvens, havia um castelo onde sonhos se tornavam realidade com um simples desejo.',
-                    image: 'https://via.placeholder.com/300x200?text=Castelo+no+C%C3%A9u'
+                    content: 'Nas nuvens mais altas, escondido do olhar humano, existia um castelo onde sonhos se tornavam realidade. A cada lua cheia, um portal mágico se abria para aqueles que mais precisavam de esperança.
+
+Maria, uma jovem humilde, encontrou o portal ao seguir uma estrela cadente. Dentro do castelo, ela encontrou um salão onde seus sonhos de infância se tornaram reais. Contudo, ao sair, percebeu que o verdadeiro poder estava em acreditar em si mesma. Sua confiança transformou sua vila em um lugar próspero.',
+                    image: '/mnt/data/A_castle_floating_among_the_clouds_with_magical_li.png'
                 },
                 {
                     title: 'O Pequeno Dragão',
-                    content: 'Um dragão que não sabia voar provou que coragem não depende de asas.',
-                    image: 'https://via.placeholder.com/300x200?text=Pequeno+Drag%C3%A3o'
+                    content: 'Um pequeno dragão, que nasceu sem asas, era alvo de zombarias de outros dragões. Porém, sua determinação o levou a descobrir que podia correr mais rápido do que qualquer um e soltar chamas como ninguém.
+
+Quando sua vila foi atacada por um gigante de gelo, o pequeno dragão correu para enfrentar o inimigo. Usando sua inteligência e fogo ardente, ele salvou sua vila e provou que asas não eram necessárias para ser um herói. Ele foi nomeado guardião da vila e inspirou outros dragões a valorizarem suas diferenças.',
+                    image: '/mnt/data/A_small_dragon_in_a_mystical_village,_breathing_fi.png'
                 },
                 {
                     title: 'A Estrela Cadente',
-                    content: 'Uma estrela cadente guiou uma criança a encontrar um tesouro escondido dentro de si mesma.',
-                    image: 'https://via.placeholder.com/300x200?text=Estrela+Cadente'
+                    content: 'Uma estrela cadente caiu em um campo e foi encontrada por uma criança. A estrela, mágica, prometeu realizar um desejo sincero.
+
+Em vez de pedir riquezas, a criança desejou que sua aldeia fosse um lugar feliz para todos. A estrela brilhou intensamente e transformou a aldeia em um refúgio de alegria e união. No centro da aldeia, surgiu uma árvore de luz que contava histórias de bondade. A criança foi lembrada para sempre como a guardiã da árvore.',
+                    image: '/mnt/data/A_glowing_shooting_star_in_a_serene_night_sky,_wit.png'
                 }
             ];
         });
